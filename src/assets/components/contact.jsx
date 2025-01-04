@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 
-
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -16,10 +15,27 @@ const Contact = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Here you can add your form submission logic
-    console.log('Form submitted:', formData);
+
+    try {
+      const response = await fetch('https://formspree.io/f/mjkkprzq', {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        alert('Thank you for your message!');
+        setFormData({ name: '', email: '', message: '' }); // Reset form
+      } else {
+        alert('There was an error. Please try again.');
+      }
+    } catch (error) {
+      alert('There was an error. Please try again.');
+    }
   };
 
   return (
@@ -92,4 +108,3 @@ const Contact = () => {
 };
 
 export default Contact;
-
