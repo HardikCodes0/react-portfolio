@@ -37,7 +37,30 @@ function Navbar() {
           CONTACT
         </motion.h3>
       </motion.div>
+      <div style={{width:'10px'}}></div>
+      <a href="https://drive.google.com/uc?export=download&id=1D0BrGNGJrDwqdx1pWG7-SU42DG-GD3dW">
+        <motion.button
+          whileHover={{ scale: 0.97 }}
+          style={{
+            height: '40px',
+            backgroundColor: 'blueviolet',
+            color: 'white',
+            padding: '10px',
+            border: 'none',
+            borderRadius: '5px',
+            cursor: 'pointer',
+
+            marginTop: '12px',
+            fontFamily: '"Source Sans 3", sans-serif'
+          }}
+        >
+          Download CV
+        </motion.button>
+      </a>
+      
     </div>
+
+
   );
 }
 
