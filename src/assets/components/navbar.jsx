@@ -54,7 +54,7 @@ function Navbar() {
             fontFamily: '"Source Sans 3", sans-serif'
           }}
         >
-          Download CV
+          Resume
         </motion.button>
       </a></div>
       
