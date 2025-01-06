@@ -2,8 +2,15 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 function Navbar() {
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
-    <div className="nav" style={{ paddingLeft:"50px",display: 'flex', height: '20px', width: '100%' }}>
+    <div className="nav" style={{ paddingLeft:"50px", display: 'flex', height: '20px', width: '100%' }}>
       <motion.div style={{ paddingRight: '20px' }}>
         <motion.h3
           variants={{
@@ -11,6 +18,7 @@ function Navbar() {
           }}
           whileHover="hover"
           transition={{ duration: 3 }}
+          onClick={() => scrollToSection('home')}
         >
           HOME
         </motion.h3>
@@ -22,6 +30,7 @@ function Navbar() {
           }}
           whileHover="hover"
           transition={{ duration: 3 }}
+          onClick={() => scrollToSection('about')}
         >
           ABOUT
         </motion.h3>
@@ -33,6 +42,7 @@ function Navbar() {
           }}
           whileHover="hover"
           transition={{ duration: 3 }}
+          onClick={() => scrollToSection('contact')}
         >
           CONTACT
         </motion.h3>
@@ -49,7 +59,6 @@ function Navbar() {
             border: 'none',
             borderRadius: '5px',
             cursor: 'pointer',
-
             marginTop: '12px',
             fontFamily: '"Source Sans 3", sans-serif'
           }}
@@ -57,12 +66,8 @@ function Navbar() {
           Resume
         </motion.button>
       </a></div>
-      
     </div>
-
-
   );
 }
-
 
 export default Navbar;
