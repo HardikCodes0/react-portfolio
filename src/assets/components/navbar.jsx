@@ -37,8 +37,8 @@ function Navbar() {
           CONTACT
         </motion.h3>
       </motion.div>
-      <div style={{width:'10px'}}></div>
-      <a href="https://drive.google.com/uc?export=download&id=1D0BrGNGJrDwqdx1pWG7-SU42DG-GD3dW">
+      <div className='gapp' style={{width:"10px"}}></div>
+      <div className='downloadcv'><a href="https://drive.google.com/uc?export=download&id=1D0BrGNGJrDwqdx1pWG7-SU42DG-GD3dW">
         <motion.button
           whileHover={{ scale: 0.97 }}
           style={{
@@ -56,12 +56,13 @@ function Navbar() {
         >
           Download CV
         </motion.button>
-      </a>
+      </a></div>
       
     </div>
 
 
   );
 }
+
 
 export default Navbar;

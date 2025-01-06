@@ -267,8 +267,10 @@ body {
       overflow-x: hidden;
       width:100%;
     }
-
-
+   
+  .downloadcv{
+    margin-right: 10px;
+  }
   .nav {
     padding-left: 5px !important;
     justify-content: center;
@@ -281,6 +283,9 @@ body {
   }
 
   /* Home section */
+  .intro{
+    margin-top: 45px;
+  }
 
   .intro h1 {
     padding-left: 70px !important;
@@ -389,7 +394,9 @@ body {
   footer {
     padding: 1rem 0 !important;
   }
-  /* Ensure the body is not overflowing */
+  .nav{
+    height: 35px;
+  }
  
 }
 
