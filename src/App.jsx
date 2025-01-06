@@ -14,7 +14,7 @@ function App() {
     <>
       <Navbar />
       <Home />
-      <div style={{marginBottom:"350px"}}></div>
+      <div className='gap1' style={{marginBottom:"350px"}}></div>
       <Aboutme />
       <div style={{marginBottom:"100px"}}></div>
       <Projects />

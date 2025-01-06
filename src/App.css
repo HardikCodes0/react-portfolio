@@ -261,17 +261,135 @@ body {
 }
 
 @media (max-width: 768px) {
-  .contact-section {
-    padding: 60px 0;
+    body ,html {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      width:100%;
+    }
+
+
+  .nav {
+    padding-left: 5px !important;
+    justify-content: center;
+    gap: 15px;
+  }
+  .contact-form {
+    width: 90%;
+    margin: 0 auto;
+    padding-left: 10px;
+  }
+
+  /* Home section */
+
+  .intro h1 {
+    padding-left: 70px !important;
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .intro h3 {
+    padding-left: 70px !important;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-right:1%
+  }
+
+  .intro button {
+    margin-left: 60px !important;
+    display: block;
+    
+    
+  }
+  .gap1{
+    height: 50px;
+  }
+  .heading{
+    margin-left: 25%;
+  }
+
+
+  /* About section */
+  .about {
+    width: 90% !important;
+    margin-left: 1% !important;
+    font-size: 20px;
+    height: auto !important;
+    padding: 20px !important;
+  }
+  .heading::after{
+    margin-left: 25%;
+  }
+  .proheading {
+    margin-left: 10%;
+  }
+  .proheading::after{
+    margin-left: 35%;
   }
   
-  .section-title {
-    font-size: 2rem;
+
+  /* Projects section */
+  .projectdes1, .projectdes2 {
+    flex-direction: column !important;
+    align-items: center;
+    text-align: center;
   }
-  
+
+  .projectdes1 img, .projectdes2 img {
+    margin-left: 0 !important;
+    width: 90% !important;
+    height: auto !important;
+  }
+
+  .projectdes1 div, .projectdes2 div {
+    margin: 20px !important;
+    padding: 0 15px;
+  }
+
+  /* Skills section */
+  .skillheader{
+    margin-left: 35%;
+  }
+  .skills {
+    flex-wrap: wrap !important;
+    justify-content: center;
+    padding: 15px !important;
+    gap: 15px !important;
+  }
+
+  .skills button {
+    margin: 5px;
+  }
+
+  /* Contact section */
+  .contact-container {
+    padding: 20px;
+  }
+
+  .contact-form {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+  }
+
   .contact-info {
     flex-direction: column;
     align-items: center;
-    gap: 20px;
   }
+
+  .info-item {
+    margin: 10px 0;
+  }
+
+  /* Footer */
+  footer {
+    padding: 1rem 0 !important;
+  }
+  /* Ensure the body is not overflowing */
+ 
 }
+
